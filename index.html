@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div>
+            <button id="1" onclick="form()"><img class="image" src="tree.jpg" alt="img"></button>
+        </div>
+        <div>
+            <button id="2" onclick="displayForm()"><img class="image" src="tree2.jpg" alt="img"></button>
+        </div>
+        <div>
+            <button id="3" onclick="dice()"><img class="image" src="tree3.jpg" alt="img"></button>
+        </div>
+        <div>
+            <button id="4" onclick="couponCode()"><img class="image" src="tree4.jpg" alt="img"></button>
+        </div>
+    </div>
+    <div class="form hidden" id="Form">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <label for="userName">User Name</label>
+        <input type="text" id="userName" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <button type="submit" onclick="submitForm()">Submit</button>
+     </div>
+     <div class="info hidden" id="display">
+        <p>Your info is : <span id="fo"></span></p>
+     </div>
+     <div class="score hidden" id="diceScore">
+        <p>Attemps left : <span id="left">0</span></p>
+        <div>
+            <button id="dice-image" onclick="diceClick()"><img class="img" src="dice.jpg" alt="img"> </button>
+            <p>Remaining Dice class : <span id="diceClicks">3</span> </p>
+            <p>Your total Score is : <span id="score">0</span></p>
+        </div>
+     </div>
+     <div class="hidden" id="congratsImage"></div>
+    <script src="script.js"></script>
+</body>
+</html>
